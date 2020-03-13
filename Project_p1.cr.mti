@@ -1,44 +1,37 @@
-//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v
-Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module mux32
-
-Top level modules:
-	mux32
-
-} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v
+//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v
 Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
 -- Compiling module sisc_tb
 
 Top level modules:
 	sisc_tb
 
-} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p2.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p2.v
 Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module rf
+-- Compiling module sisc_tb
 
 Top level modules:
-	rf
+	sisc_tb
 
-} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/pc.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/pc.v
 Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module ctrl
+-- Compiling module pc
 
 Top level modules:
-	ctrl
+	pc
 
-} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc.v
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ir.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ir.v
 Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module sisc
+-- Compiling module ir
 
 Top level modules:
-	sisc
+	ir
 
-} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/br.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/br.v
 Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
--- Compiling module statreg
+-- Compiling module br
 
 Top level modules:
-	statreg
+	br
 
 } {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux4.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux4.v
 Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
@@ -47,11 +40,46 @@ Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
 Top level modules:
 	mux4
 
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module mux32
+
+Top level modules:
+	mux32
+
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module rf
+
+Top level modules:
+	rf
+
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module statreg
+
+Top level modules:
+	statreg
+
 } {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/alu.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/alu.v
 Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
 -- Compiling module alu
 
 Top level modules:
 	alu
+
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module ctrl
+
+Top level modules:
+	ctrl
+
+} {} {}} //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/im.v {1 {vlog -work work -stats=none //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/im.v
+Model Technology ModelSim DE-64 vlog 2019.2 Compiler 2019.04 Apr 17 2019
+-- Compiling module im
+
+Top level modules:
+	im
 
 } {} {}}
