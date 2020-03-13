@@ -1,0 +1,187 @@
+m255
+K4
+z2
+!s11f vlog 2019.2 2019.04, Apr 17 2019
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/MentorGraphics/examples
+valu
+Z0 !s110 1584128110
+!i10b 1
+!s100 ?FYPeRc<O_A68BlhmbGOi1
+!s11b 1SdPK0304a<SKQdS0Z<l^1
+Ijdf@Loeg@TQRKL_C44l[D1
+Z1 VDg1SIo80bB@j0V0VzS_@n1
+Z2 d//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1
+w1516391779
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/alu.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/alu.v
+L0 6
+Z3 OP;L;2019.2;69
+r1
+!s85 0
+31
+!s108 1584128109.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/alu.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/alu.v|
+!i113 1
+Z4 o-work work
+Z5 tCvgOpt 0
+vctrl
+R0
+!i10b 1
+!s100 zB<:PHeMNW`l0^Kg^JeiU1
+!s11b LG:cl?TXVCe5L86^cFAcH1
+I^Q0ClQIHPaODZ<X@:VLlL2
+R1
+R2
+w1583877803
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v
+L0 6
+R3
+r1
+!s85 0
+31
+Z6 !s108 1584128110.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/ctrl.v|
+!i113 1
+R4
+R5
+vmux32
+R0
+!i10b 1
+!s100 :X@CNUBVz0Z;aCJ_OFS[b2
+!s11b CaN3BW<@nkdgkC4h1QRGM1
+I=fj=<79b@=?=1CHC:VVG03
+R1
+R2
+w1455296371
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v
+L0 6
+R3
+r1
+!s85 0
+31
+R6
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux32.v|
+!i113 1
+R4
+R5
+vmux4
+R0
+!i10b 1
+!s100 RE<We:R5;YY3KVTVmMe_A2
+!s11b :IPC=0YX9B?Tz5cUSzmXW0
+IV;cHkX_>hU4`K4o2LEkhJ2
+R1
+R2
+w1517233904
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux4.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux4.v
+L0 6
+R3
+r1
+!s85 0
+31
+R6
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux4.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/mux4.v|
+!i113 1
+R4
+R5
+vrf
+R0
+!i10b 1
+!s100 8XAjmi[>K`TmI[OID@j8L0
+!s11b b=HBbJ>i?C7jHd^C9>R:b3
+INAlEd;]52`Dofc[a7U5`G3
+R1
+R2
+w1518629743
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v
+L0 6
+R3
+r1
+!s85 0
+31
+R6
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/rf.v|
+!i113 1
+R4
+R5
+vsisc
+Z7 !s110 1584128111
+!i10b 1
+!s100 TU<KVaOeoMG3U:BY><:Id0
+!s11b czoAC3ZN:DW^eL=9F^zZY2
+IJj5bf7nheAl=[9:7CmWHZ3
+R1
+R2
+w1583883374
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc.v
+L0 7
+R3
+r1
+!s85 0
+31
+Z8 !s108 1584128111.000000
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc.v|
+!i113 1
+R4
+R5
+vsisc_tb
+R7
+!i10b 1
+!s100 `Jcm1mXU]b>GXh3KeSFfA2
+!s11b Li0LeL9DKdoPbDZ3zF>6S1
+IgkNoM8c:nn_@<b0cA9k8K2
+R1
+R2
+w1583133733
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/sisc_tb_p1.v|
+!i113 1
+R4
+R5
+vstatreg
+R7
+!i10b 1
+!s100 MJkL87QlS:::zz=oZ=a3h3
+!s11b V0nP]40>eBZYl6V_[SO`O3
+IBRYD7OVIj5nFQ45aRn`890
+R1
+R2
+w1456433853
+8//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v
+F//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v
+L0 6
+R3
+r1
+!s85 0
+31
+R8
+!s107 //iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v|
+!s90 -reportprogress|300|-work|work|-stats=none|//iowa.uiowa.edu/shared/engineering/home/gvaske/windowsdata/Desktop/School/ComputerArchitectureAndOrganization/Project/Part_1/statreg.v|
+!i113 1
+R4
+R5
