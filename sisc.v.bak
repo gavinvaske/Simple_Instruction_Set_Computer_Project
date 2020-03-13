@@ -32,44 +32,43 @@ module sisc (clk, rst_f, ir);
 	// PART #2 internal Wires
 	wire [15:0] pc_out;
 	wire [15:0] pc_inc;
-
-	wire br_sel;
 	wire [15:0] branch_address;
 
-	wire ir_load;
-
+	// PART #2 control signals
 	wire pc_sel;
 	wire pc_write;
 	wire pc_rst;
-
+	wire br_sel;
+	wire ir_load;
+	wire rb_sel;
 
 	/* 
 			[START] PART #2 
 	*/
 
-	// im
+	// INSTRUCTION MEMORY
 	im my_im(
-		.read_addr (pc_out[15:0]), // read_addr (16 bits): The address of the instruction to read.
-		.read_data (ir[31:0])	 		 // read_data (32 bits): The instruction specified by address read_addr.
+		.read_addr (pc_out[15:0]), // (16 bits): The address of the instruction to read.
+		.read_data (ir[31:0])	 		 // (32 bits): The instruction specified by address read_addr.
 	);
 
-	// BR
+	// BRANCH ADDRESS CALCULATOR
 	br my_br(
-		.pc_inc (pc_inc[15:0]), 				// pc_inc (16 bits):
-		.imm (ir[15:0]), 								// imm (16 bits)
-		.br_sel (br_sel), 							// br_sel (1 bit)
-		.br_addr (branch_address[15:0]) // br_addr (16 bits)
+		.pc_inc (pc_inc[15:0]), 				// (16 bits)
+		.imm (ir[15:0]), 								// (16 bits)
+		.br_sel (br_sel), 							// (1 bit)
+		.br_addr (branch_address[15:0]) // (16 bits)
 	);
 
-	// ir
+	// INSTRUCTION REGISTER
 	ir my_ir(
-		.clk (clk), 				        // Internal Clock
-		.ir_load (ir_load), 				// ir_load (1 bit): if ir_load is = 1, the IR is loaded with read_data
-		.read_data (ir[31:0]),  		// read_data (32 bits): the 32 bit instruction from instruction memory
-		.instr (ir[31:0])					  // instr (32 bits): the 32 bit saved instruction
+		.clk (clk), 				    // Internal Clock
+		.ir_load (ir_load), 		// (1 bit): if ir_load is = 1, the IR is loaded with read_data
+		.read_data (ir[31:0]),  // (32 bits): the 32 bit instruction from instruction memory
+		.instr (ir[31:0])				// (32 bits): the 32 bit saved instruction
 	);
 
-	// PC
+	// PROGRAM COUNTER
 	pc my_pc(
 		.clk (clk), 	  								  // Internal Clock
 		.br_addr (branch_address[15:0]), 	// (16 bits) br output signal
@@ -78,7 +77,6 @@ module sisc (clk, rst_f, ir);
 		.pc_rst (pc_rst), 								// (1 bit) ctrl output signal
 		.pc_out (pc_out[15:0])						// (16 bits) pc output signal
 	);
-
 
 	/* 
 			[START] PART #1
@@ -141,12 +139,20 @@ module sisc (clk, rst_f, ir);
 		.stat (stat_out[3:0]), 
 		.rf_we (rf_we),
 		.alu_op (alu_op[1:0]), 
-		.wb_sel (wb_sel)
+		.wb_sel (wb_sel),
+		.br_sel (br_sel),	     // Part #2 control signal 
+		.pc_rst (pc_rst),      // Part #2 control signal 
+		.pc_write (pc_write),  // Part #2 control signal 
+		.pc_sel (pc_sel),      // Part #2 control signal 
+		.rb_sel (rb_sel),      // Part #2 control signal 
+		.ir_load (ir_load)     // Part #2 control signal 
 	);
 
 
   initial begin
-		$monitor($time,,,"IR: %h, R0: %h, R1: %h, R2: %h,  R3: %h,  R4: %h,  R5: %h, R6: %h, R12 : %h R13 : %h R14 : %h, R15 : %h, ALU_OP : %h, WB_SEL : %h, RF_WE : %h, STAT : %h,  MM : %h, ALU_Result : %h, MUX32_OUTPUT : %h, MUX4_OUTPUT : %h",
+		// PART #1 MONITOR STATEMENT
+/*
+		$monitor($time,,,"IR: %h, R0: %h, R1: %h, R2: %h,  R3: %h,  R4: %h,  R5: %h, R6: %h, R12 : %h R13 : %h R14 : %h, R15 : %h, ALU_OP : %h, WB_SEL : %h, RF_WE : %h, STAT : %h,  MM : %h, ALU_Result : %h, MUX32_OUTPUT : %h, MUX4_OUTPUT : %h, PC : %h, br_sel : %h, pc_write : %h, pc_sel : %h",
 			ir, 						         // IR
 			my_rf.ram_array[0],      // R0
 			my_rf.ram_array[1],      // R1
@@ -166,7 +172,27 @@ module sisc (clk, rst_f, ir);
 			ir[27:24],						   // MM
 			alu_result[31:0],				 // ALU Result
       mux32_out[31:0],				 // MUX32 OUTPUT
-      mux4_out[3:0]					   // MUX4 OUTPUT
+      mux4_out[3:0],					 // MUX4 OUTPUT
+			pc_out,									 // PC (value of program counter)
+			br_sel,									 // BR_SEL
+			pc_write,								 // PC_WRITE
+			pc_sel									 // PC_SEL
+		);
+*/
+		// PART #2 MONITOR STATEMENT
+		$monitor($time,,,"IR: %h, R0: %h, R1: %h, R2: %h,  R3: %h,  R4: %h,  R5: %h, ALU_OP : %h, PC : %h, br_sel : %h, pc_write : %h, pc_sel : %h",
+			ir, 						         // IR
+			my_rf.ram_array[0],      // R0
+			my_rf.ram_array[1],      // R1
+			my_rf.ram_array[2],      // R2
+			my_rf.rf.ram_array[3],   // R3
+			my_rf.rf.ram_array[4],   // R4
+			my_rf.rf.ram_array[5],   // R5
+			alu_op,					         // ALU_OP
+			pc_out,									 // PC (value of program counter)
+			br_sel,									 // BR_SEL
+			pc_write,								 // PC_WRITE
+			pc_sel									 // PC_SEL
 		);
 	end
 endmodule
