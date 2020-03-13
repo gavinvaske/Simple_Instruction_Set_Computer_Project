@@ -42,6 +42,7 @@ module sisc (clk, rst_f, ir);
 	wire pc_write;
 	wire pc_rst;
 
+
 	/* 
 			[START] PART #2 
 	*/
@@ -77,6 +78,7 @@ module sisc (clk, rst_f, ir);
 		.pc_rst (pc_rst), 								// (1 bit) ctrl output signal
 		.pc_out (pc_out[15:0])						// (16 bits) pc output signal
 	);
+
 
 	/* 
 			[START] PART #1

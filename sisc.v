@@ -49,24 +49,24 @@ module sisc (clk, rst_f, ir);
 
 	// im
 	im my_im(
-		.read_addr (pc_out[15:0]), // read_addr (16 bits): The address of the instruction to read.
-		.read_data (ir[31:0])	 		 // read_data (32 bits): The instruction specified by address read_addr.
+		.read_addr (pc_out[15:0]), // (16 bits): The address of the instruction to read.
+		.read_data (ir[31:0])	 		 // (32 bits): The instruction specified by address read_addr.
 	);
 
 	// BR
 	br my_br(
-		.pc_inc (pc_inc[15:0]), 				// pc_inc (16 bits):
-		.imm (ir[15:0]), 								// imm (16 bits)
-		.br_sel (br_sel), 							// br_sel (1 bit)
-		.br_addr (branch_address[15:0]) // br_addr (16 bits)
+		.pc_inc (pc_inc[15:0]), 				// (16 bits)
+		.imm (ir[15:0]), 								// (16 bits)
+		.br_sel (br_sel), 							// (1 bit)
+		.br_addr (branch_address[15:0]) // (16 bits)
 	);
 
 	// ir
 	ir my_ir(
 		.clk (clk), 				        // Internal Clock
-		.ir_load (ir_load), 				// ir_load (1 bit): if ir_load is = 1, the IR is loaded with read_data
-		.read_data (ir[31:0]),  		// read_data (32 bits): the 32 bit instruction from instruction memory
-		.instr (ir[31:0])					  // instr (32 bits): the 32 bit saved instruction
+		.ir_load (ir_load), 				// (1 bit): if ir_load is = 1, the IR is loaded with read_data
+		.read_data (ir[31:0]),  		// (32 bits): the 32 bit instruction from instruction memory
+		.instr (ir[31:0])					  // (32 bits): the 32 bit saved instruction
 	);
 
 	// PC
